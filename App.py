@@ -24,8 +24,11 @@ options_day = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 options_age = ['18-30', '31-50', 'Over 51', 'Unknown', 'Under 18']
 
 # number of vehicle involved: range of 1 to 7
+options_vehicle_involved = []
 # number of casualties: range of 1 to 8
+options_casualities = []
 # hour of the day: range of 0 to 23
+options_hour_of_the_day = []
 
 options_types_collision = ['Vehicle with vehicle collision','Collision with roadside objects',
               'Collision with pedestrians','Rollover','Collision with animals',
@@ -98,30 +101,30 @@ def main():
        [Kaggle](https://www.kaggle.com/avikumart) 
        """)
        a,b,c = st.columns([0.2,0.6,0.2])
-with b:
- st.image("banner-picture.jpeg", use_column_width=True)
+    with b: 
+        st.image("banner-picture.jpeg", use_column_width=True)
 
 
-# description about the project and code files       
-st.subheader("🧾Description:")
-st.text("""This data set is collected from Addis Ababa Sub-city police departments for master's research work. 
-The data set has been prepared from manual records of road traffic accidents of the year 2017-20. 
-All the sensitive information has been excluded during data encoding and finally it has 32 features and 12316 instances of the accident.
-Then it is preprocessed and for identification of major causes of the accident by analyzing it using different machine learning classification algorithms.
-""")
+        # description about the project and code files       
+        st.subheader("🧾Description:")
+        st.text("""This data set is collected from Addis Ababa Sub-city police departments for master's research work. 
+        The data set has been prepared from manual records of road traffic accidents of the year 2017-20. 
+        All the sensitive information has been excluded during data encoding and finally it has 32 features and 12316 instances of the accident.
+        Then it is preprocessed and for identification of major causes of the accident by analyzing it using different machine learning classification algorithms.
+        """)
 
-st.markdown("Source of the dataset: [Click Here](https://www.narcis.nl/dataset/RecordID/oai%3Aeasy.dans.knaw.nl%3Aeasy-dataset%3A191591)")
+        st.markdown("Source of the dataset: [Click Here](https://www.narcis.nl/dataset/RecordID/oai%3Aeasy.dans.knaw.nl%3Aeasy-dataset%3A191591)")
 
-st.subheader("🧭 Problem Statement:")
-st.text("""The target feature is Accident_severity which is a multi-class variable. 
-The task is to classify this variable based on the other 31 features step-by-step by going through each day's task. 
-The metric for evaluation will be f1-score
-""")
+        st.subheader("🧭 Problem Statement:")
+        st.text("""The target feature is Accident_severity which is a multi-class variable. 
+        The task is to classify this variable based on the other 31 features step-by-step by going through each day's task. 
+        The metric for evaluation will be f1-score
+        """)
 
-st.markdown("Please find GitHub repository link of project: [Click Here](https://github.com/avikumart/Road-Traffic-Severity-Classification-Project)")          
-  
-# run the main function        
-if __name__ == '__main__':
-  main()
+        st.markdown("Please find GitHub repository link of project: [Click Here](https://github.com/avikumart/Road-Traffic-Severity-Classification-Project)")          
+        
+        # run the main function        
+        if __name__ == '__main__':
+            main()
 
   
