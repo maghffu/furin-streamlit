@@ -24,11 +24,11 @@ options_day = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 options_age = ['18-30', '31-50', 'Over 51', 'Unknown', 'Under 18']
 
 # number of vehicle involved: range of 1 to 7
-options_vehicle_involved = []
+#options_vehicle_involved = []
 # number of casualties: range of 1 to 8
-options_casualities = []
+#options_casualities = []
 # hour of the day: range of 0 to 23
-options_hour_of_the_day = []
+#options_hour_of_the_day = []
 
 options_types_collision = ['Vehicle with vehicle collision','Collision with roadside objects',
               'Collision with pedestrians','Rollover','Collision with animals',
